@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Customer added successfully",
+        "S002": "Customer updated successfully",
+        "S003": "Customer deleted successfully",
+        "S004": "Customer list fetched successfully",
+
+        "E001": "Failed to adding customer",
+        "E002": "Failed to updating customer",
+        "E003": "Failed to deleting customer",
+        "E004": "Failed to fetching customer list"
+    }
+}

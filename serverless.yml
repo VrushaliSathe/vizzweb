@@ -1,0 +1,153 @@
+service: VIZZPLUS-API
+plugins:
+  - serverless-offline
+  - serverless-prune-plugin
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  timeout: 15
+  stage: dev
+  environment:
+    CURRENT_ENV: ${file(./config/config.${self:custom.currentStage}.json):CURRENT_ENV}
+    DB_CONNECTION_URL: ${file(./config/config.${self:custom.currentStage}.json):DB_CONNECTION_URL}
+    CM_AWS_ACCESS_KEY_ID: ${file(./config/config.${self:custom.currentStage}.json):CM_AWS_ACCESS_KEY_ID}
+    CM_AWS_DEFAULT_REGION: ${file(./config/config.${self:custom.currentStage}.json):CM_AWS_DEFAULT_REGION}
+    CM_AWS_SECRET_ACCESS_KEY: ${file(./config/config.${self:custom.currentStage}.json):CM_AWS_SECRET_ACCESS_KEY}
+    S3_IMAGE_BUCKET: ${file(./config/config.${self:custom.currentStage}.json):S3_IMAGE_BUCKET}
+    S3_IMAGE_PATH: ${file(./config/config.${self:custom.currentStage}.json):S3_IMAGE_PATH}
+    JWT_SECRET: ${file(./config/config.${self:custom.currentStage}.json):JWT_SECRET}
+    FRONTEND_BASE_URL: ${file(./config/config.${self:custom.currentStage}.json):FRONTEND_BASE_URL}
+    SERVER_URL: ${file(./config/config.${self:custom.currentStage}.json):SERVER_URL}
+    FE_BASE_URL: ${file(./config/config.${self:custom.currentStage}.json):FE_BASE_URL}
+    DEFAULT_PASS: ${file(./config/config.${self:custom.currentStage}.json):DEFAULT_PASS}
+custom:
+  serverless-offline:
+    httpPort: 4000
+  defaultStage: dev
+  currentStage: ${opt:stage, self:custom.defaultStage}
+  stage: ${self:custom.defaultStage}
+  prune:
+    automatic: true
+    includeLayers: true
+    number: 3
+
+functions:
+  hello:
+    handler: ./handler/handler.init
+    events:
+      - http:
+          path: /hello/{any+}
+          method: ANY
+          cors: true
+  auth:
+    handler: ./handler/auth.init
+    events:
+      - http:
+          path: /auth
+          method: ANY
+          cors: true
+      - http:
+          path: /auth/{any+}
+          method: ANY
+          cors: true
+  user:
+    handler: ./handler/user.init
+    events:
+      - http:
+          path: /user
+          method: ANY
+          cors: true
+      - http:
+          path: /user/{any+}
+          method: ANY
+          cors: true
+  doctor:
+    handler: ./handler/doctor.init
+    events:
+      - http:
+          path: /doctor
+          method: ANY
+          cors: true
+      - http:
+          path: /doctor/{any+}
+          method: ANY
+          cors: true
+  appointment:
+    handler: ./handler/appointment.init
+    events:
+      - http:
+          path: /appointment
+          method: ANY
+          cors: true
+      - http:
+          path: /appointment/{any+}
+          method: ANY
+          cors: true
+  client:
+    handler: ./handler/client.init
+    events:
+      - http:
+          path: /client
+          method: ANY
+          cors: true
+      - http:
+          path: /client/{any+}
+          method: ANY
+          cors: true
+  customer:
+    handler: ./handler/customer.init
+    events:
+      - http:
+          path: /customer
+          method: ANY
+          cors: true
+      - http:
+          path: /customer/{any+}
+          method: ANY
+          cors: true
+  person:
+    handler: ./handler/person.init
+    events:
+      - http:
+          path: /person
+          method: ANY
+          cors: true
+      - http:
+          path: /person/{any+}
+          method: ANY
+          cors: true
+  time-slot:
+    handler: ./handler/time-slot.init
+    events:
+      - http:
+          path: /time-slot
+          method: ANY
+          cors: true
+      - http:
+          path: /time-slot/{any+}
+          method: ANY
+          cors: true
+  user-type:
+    handler: ./handler/user-type.init
+    events:
+      - http:
+          path: /user-type
+          method: ANY
+          cors: true
+      - http:
+          path: /user-type/{any+}
+          method: ANY
+          cors: true
+  service:
+    handler: ./handler/service.init
+    events:
+      - http:
+          path: /service
+          method: ANY
+          cors: true
+      - http:
+          path: /service/{any+}
+          method: ANY
+          cors: true
+  

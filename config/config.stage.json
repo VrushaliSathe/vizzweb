@@ -1,0 +1,13 @@
+{
+    "CURRENT_ENV": "stage",
+    "DB_CONNECTION_URL": "",
+    "CM_AWS_ACCESS_KEY_ID": "",
+    "CM_AWS_DEFAULT_REGION": "ap-south-1",
+    "CM_AWS_SECRET_ACCESS_KEY": "",
+    "S3_IMAGE_BUCKET": "",
+    "S3_IMAGE_PATH": "dev",
+    "JWT_SECRET": "this_is_vizzplus_secret",
+    "FRONTEND_BASE_URL": "",
+    "SERVER_URL": "",
+    "FE_BASE_URL": ""
+  }

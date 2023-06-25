@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Appointment added successfully",
+        "S002": "Appointment updated successfully",
+        "S003": "Appointment deleted successfully",
+        "S004": "Appointment list fetched successfully",
+
+        "E001": "Failed to adding appointment",
+        "E002": "Failed to updating appointment",
+        "E003": "Failed to deleting appointment",
+        "E004": "Failed to fetching appointment list"
+    }
+}

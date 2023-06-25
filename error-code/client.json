@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Client added successfully",
+        "S002": "Client updated successfully",
+        "S003": "Client deleted successfully",
+        "S004": "Client list fetched successfully",
+
+        "E001": "Failed to adding client",
+        "E002": "Failed to updating client",
+        "E003": "Failed to deleting client",
+        "E004": "Failed to fetching client list"
+    }
+}

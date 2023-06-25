@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Person added successfully",
+        "S002": "Person updated successfully",
+        "S003": "Person deleted successfully",
+        "S004": "Person list fetched successfully",
+
+        "E001": "Failed to adding person",
+        "E002": "Failed to updating person",
+        "E003": "Failed to deleting person",
+        "E004": "Failed to fetching person list"
+    }
+}

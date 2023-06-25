@@ -1,0 +1,16 @@
+{
+    "en": {
+        "S001": "User save successfully",
+        "S002": "User update successfully",
+        "S003": "User delete successfully",
+        "S004": "User fetched successfully",
+        "S005": "Profile fetched successfully",
+        "S006": "User already exists.",
+
+        "E001": "Error while adding user",
+        "E002": "Error while updating user",
+        "E003": "Error while deleting user",
+        "E004": "Error while fetching user",
+        "E005": "Error while fetching profile"
+    }
+}

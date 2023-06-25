@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Time slot added successfully",
+        "S002": "Time slot updated successfully",
+        "S003": "Time slot deleted successfully",
+        "S004": "Time slot list fetched successfully",
+
+        "E001": "Failed to adding time slot",
+        "E002": "Failed to updating time slot",
+        "E003": "Failed to deleting time slot",
+        "E004": "Failed to fetching time slot list"
+    }
+}

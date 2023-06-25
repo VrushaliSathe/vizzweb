@@ -1,0 +1,14 @@
+{
+    "en": {
+        "S001": "Service save successfully",
+        "S002": "Service update successfully",
+        "S003": "Service delete successfully",
+        "S004": "Service fetched successfully",
+        "S005": "Service already exists.",
+
+        "E001": "Error while adding service",
+        "E002": "Error while updating service",
+        "E003": "Error while deleting service",
+        "E004": "Error while fetching service"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "Doctor added successfully",
+        "S002": "Doctor updated successfully",
+        "S003": "Doctor deleted successfully",
+        "S004": "Doctor list fetched successfully",
+
+        "E001": "Failed to adding doctor",
+        "E002": "Failed to updating doctor",
+        "E003": "Failed to deleting doctor",
+        "E004": "Failed to fetching doctor list"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "en": {
+        "S001": "User type added successfully",
+        "S002": "User type updated successfully",
+        "S003": "User type deleted successfully",
+        "S004": "User type list fetched successfully",
+
+        "E001": "Failed to adding user type",
+        "E002": "Failed to updating user type",
+        "E003": "Failed to deleting user type",
+        "E004": "Failed to fetching user type list"
+    }
+}
